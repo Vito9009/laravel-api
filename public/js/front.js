@@ -2375,6 +2375,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Main",
   data: function data() {
@@ -2960,6 +2961,10 @@ var render = function () {
           _c("h3", [_vm._v(_vm._s(post.title))]),
           _vm._v(" "),
           _c("p", [_vm._v(_vm._s(post.content))]),
+          _vm._v(" "),
+          post.image
+            ? _c("img", { attrs: { src: "/storage/" + post.image, alt: "" } })
+            : _vm._e(),
         ])
       }),
       0
